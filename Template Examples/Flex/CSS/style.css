@@ -38,7 +38,6 @@ a {
   display: flex;
   flex-direction: column;
   flex: 72%;
-  min-width: 550px;
 }
 
 .right {
@@ -66,4 +65,19 @@ footer {
   text-align: center;
   background: #ddd;
   margin-top: 20px;
+}
+/*for medium devices*/
+@media screen and (max-width: 750px) {
+  .left, .right {   
+    flex: 100%;
+    padding: 0;
+  }
+}
+/*for small devices*/
+@media screen and (max-width: 400PX) {
+  .topnavbar {
+    flex-direction: column;
+    flex: 100%;
+    text-align: center;
+  }
 }

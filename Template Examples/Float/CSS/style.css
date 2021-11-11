@@ -18,6 +18,7 @@ header {
 
 a {
   float: left;
+  display: block;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -31,7 +32,6 @@ a {
 .left {
   float: left;
   width: 75%;
-  min-width: 550px;
 }
 
 .right {
@@ -64,4 +64,19 @@ footer {
   text-align: center;
   background: #ddd;
   margin-top: 20px;
+}
+
+/*for medium devices*/
+@media screen and (max-width: 750px) {
+  .left, .right {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/*for small devices*/
+@media screen and (max-width: 350px) {
+  .topnavbar a {
+    float: none;
+    width: 100%;
+  }
 }
